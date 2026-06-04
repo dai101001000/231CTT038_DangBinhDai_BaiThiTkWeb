@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Ngày hội CNTT 2026</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>NGÀY HỘI CNTT 2026</h1>
+        <p>Kết nối - Sáng tạo - Bứt phá tương lai</p>
+    </div>
+
+    <nav>
+        <ul>
+            <li>Trang chủ</li>
+            <li>Giới thiệu</li>
+            <li>Lịch trình</li>
+            <li>Diễn giả</li>
+            <li>Cuộc thi</li>
+            <li>Liên hệ</li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <ul>
+            <li onclick="chonMuc('Giới thiệu')">Giới thiệu</li>
+            <li onclick="chonMuc('Lịch trình')">Lịch trình</li>
+            <li onclick="chonMuc('Diễn giả')">Diễn giả</li>
+            <li onclick="chonMuc('Cuộc thi')">Cuộc thi</li>
+            <li onclick="chonMuc('Liên hệ')">Liên hệ</li>
+        </ul>
+
+        <div class="selected">
+            <h4>Mục đang chọn:</h4>
+            <span id="mucDangChon">Giới thiệu</span>
+        </div>
+
+    </aside>
+
+    <main>
+
+        <!-- Banner -->
+
+        <section class="banner">
+
+            <div class="banner-text">
+                <h2>CHÀO MỪNG ĐẾN VỚI</h2>
+                <h1>NGÀY HỘI CNTT 2026</h1>
+
+                <p>
+                    Sự kiện thường niên dành cho sinh viên đam mê công nghệ.
+                </p>
+
+                <button>TÌM HIỂU NGAY</button>
+            </div>
+
+            <img src="images/banner.jpg">
+
+        </section>
+
+        <!-- Hoạt động -->
+
+        <h2 class="title">
+            CÁC HOẠT ĐỘNG NỔI BẬT
+        </h2>
+
+        <section class="cards">
+
+            <article class="card">
+
+                <img src="images/event1.jpg">
+
+                <h3>HACKATHON</h3>
+
+                <p>
+                    Thử thách lập trình trong 24 giờ liên tục.
+                </p>
+
+                <div class="point">
+                    Điểm thưởng:
+                    <span>100</span>
+                </div>
+
+                <button
+                onclick="hienThiHoatDong('Hackathon',100)">
+                Chi tiết
+                </button>
+
+            </article>
+
+            <article class="card">
+
+                <img src="images/event2.jpg">
+
+                <h3>AI CHALLENGE</h3>
+
+                <p>
+                    Ứng dụng AI giải quyết bài toán thực tế.
+                </p>
+
+                <div class="point">
+                    Điểm thưởng:
+                    <span>80</span>
+                </div>
+
+                <button
+                onclick="hienThiHoatDong('AI Challenge',80)">
+                Chi tiết
+                </button>
+
+            </article>
+
+            <article class="card">
+
+                <img src="images/event3.jpg">
+
+                <h3>ROBOTICS</h3>
+
+                <p>
+                    Thiết kế và lập trình robot.
+                </p>
+
+                <div class="point">
+                    Điểm thưởng:
+                    <span>60</span>
+                </div>
+
+                <button
+                onclick="hienThiHoatDong('Robotics',60)">
+                Chi tiết
+                </button>
+
+            </article>
+
+        </section>
+
+        <section class="result">
+
+            <h3>Hoạt động đã chọn</h3>
+
+            <div id="tenHoatDong">
+                Chưa chọn
+            </div>
+
+            <div id="diemThuong">
+                Điểm thưởng: 0
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<footer>
+
+    <div>
+        Thời gian truy cập:
+        <span id="time"></span>
+    </div>
+
+    <div>
+        MSSV: 2212345
+    </div>
+
+    <div>
+        Nguyễn Văn A
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
